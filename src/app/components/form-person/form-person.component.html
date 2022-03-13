@@ -1,0 +1,18 @@
+<div class="p-5" >
+    <form [formGroup]="formPerson">
+        <div class="mb-3">
+          <label for="fullname" class="form-label">Fullname</label>
+          <input type="text" formControlName="fullname" class="form-control" id="fullname" aria-describedby="fullname">
+        </div>
+        <div class="mb-3">
+          <label for="birth" class="form-label">Birth</label>
+          <input type="date" formControlName="birth" class="form-control" id="birth">
+        </div>
+        <div class="mb-3">
+            <label for="parent" class="form-label">Parent</label>
+            <input type="text" formControlName="parentesco" class="form-control" id="parent" aria-describedby="parent">
+        </div>
+        <button [disabled]="formPerson.status === 'INVALID'" type="submit" (click)="submitForm()" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+

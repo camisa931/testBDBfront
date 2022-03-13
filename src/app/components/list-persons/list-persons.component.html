@@ -1,0 +1,18 @@
+<table class="table p-3">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Fullname</th>
+        <th scope="col">Birth</th>
+        <th scope="col">Parent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of listPersons">
+        <th scope="row">{{person.id}}</th>
+        <td>{{person.fullname}}</td>
+        <td>{{person.birth}}</td>
+        <td>{{person.parentesco}}</td>
+      </tr>
+    </tbody>
+  </table>
